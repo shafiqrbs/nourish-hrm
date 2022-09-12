@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="InterviewCard" columnCount="2" printOrder="Horizontal" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="297" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="43f76727-553a-485f-b147-7a5221d9bfc1">
+	<parameter name="companyLogoUrl" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Erplogo.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="companyTitle" class="java.lang.String">
+		<defaultValueExpression><![CDATA["CloudERP"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="companyAddress" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Lion Shopping Complex,1 Kazi Nazrul Islam Ave, Dhaka 1215, Bangladesh"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="userReference" class="java.lang.String">
+		<defaultValueExpression><![CDATA["MLGMED0000"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="interviewDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="interviewDate"/>
+		<fieldDescription><![CDATA[interviewDate]]></fieldDescription>
+	</field>
+	<field name="employeeTempCode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="employeeTempCode"/>
+		<fieldDescription><![CDATA[employeeTempCode]]></fieldDescription>
+	</field>
+	<field name="candidateName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="candidateName"/>
+		<fieldDescription><![CDATA[candidateName]]></fieldDescription>
+	</field>
+	<field name="isGivenFN" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="isGivenFN"/>
+		<fieldDescription><![CDATA[isGivenFN]]></fieldDescription>
+	</field>
+	<field name="fatherName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="fatherName"/>
+		<fieldDescription><![CDATA[fatherName]]></fieldDescription>
+	</field>
+	<field name="spouseName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="spouseName"/>
+		<fieldDescription><![CDATA[spouseName]]></fieldDescription>
+	</field>
+	<field name="applyForPosition" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="applyForPosition"/>
+		<fieldDescription><![CDATA[applyForPosition]]></fieldDescription>
+	</field>
+	<field name="dateOfBirth" class="java.util.Date">
+		<property name="com.jaspersoft.studio.field.label" value="dateOfBirth"/>
+		<fieldDescription><![CDATA[dateOfBirth]]></fieldDescription>
+	</field>
+	<field name="isNIDSubmit" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="isNIDSubmit"/>
+		<fieldDescription><![CDATA[isNIDSubmit]]></fieldDescription>
+	</field>
+	<field name="isBirthDateCertSubmit" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="isBirthDateCertSubmit"/>
+		<fieldDescription><![CDATA[isBirthDateCertSubmit]]></fieldDescription>
+	</field>
+	<field name="isChairmanCertSubmit" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="isChairmanCertSubmit"/>
+		<fieldDescription><![CDATA[isChairmanCertSubmit]]></fieldDescription>
+	</field>
+	<field name="behave" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="behave"/>
+		<fieldDescription><![CDATA[behave]]></fieldDescription>
+	</field>
+	<field name="other" class="java.lang.String">
+		<fieldDescription><![CDATA[other]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="275" splitType="Prevent">
+			<frame>
+				<reportElement x="15" y="15" width="267" height="245" uuid="9cb1ac7f-5e06-4516-85a1-8bdc82ca100d"/>
+				<box>
+					<pen lineWidth="0.5" lineStyle="Solid" lineColor="#737373"/>
+				</box>
+				<frame>
+					<reportElement x="8" y="15" width="252" height="60" uuid="326b855b-77d7-4707-be5a-6a6070078f8d"/>
+					<image hAlign="Center" vAlign="Middle" isLazy="true" onErrorType="Blank" evaluationTime="Report">
+						<reportElement isPrintRepeatedValues="false" x="0" y="0" width="60" height="60" uuid="c3606bc6-93a0-426c-a58b-f74e85dd2216"/>
+						<graphicElement fill="Solid"/>
+						<imageExpression><![CDATA[$P{companyLogoUrl}]]></imageExpression>
+					</image>
+					<textField>
+						<reportElement stretchType="ContainerHeight" x="65" y="8" width="142" height="12" uuid="082212e5-c47e-44d4-b5af-f300bf81cc3e"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="8" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{companyTitle}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement stretchType="ContainerHeight" x="65" y="24" width="142" height="18" uuid="7b018a16-5b57-4c6c-b38c-657b6358da54"/>
+						<textElement textAlignment="Center" verticalAlignment="Top">
+							<font size="6"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{companyAddress}]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement stretchType="ContainerHeight" x="65" y="46" width="142" height="10" uuid="1ad62df6-978b-4626-a181-72d0464aa236"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="6" isBold="true"/>
+						</textElement>
+						<text><![CDATA[Interview Card]]></text>
+					</staticText>
+					<textField>
+						<reportElement stretchType="ContainerHeight" x="212" y="8" width="40" height="6" uuid="119adcf7-8152-4012-801f-d01dc770ee38"/>
+						<box>
+							<pen lineWidth="0.5" lineColor="#737373"/>
+							<topPen lineWidth="0.0"/>
+							<leftPen lineWidth="0.0"/>
+							<rightPen lineWidth="0.0"/>
+						</box>
+						<textElement textAlignment="Center" verticalAlignment="Top">
+							<font size="5"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{userReference}]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement stretchType="ContainerHeight" x="212" y="14" width="40" height="6" uuid="d37c5d4c-71dc-4ac9-965e-c955bd86dc71"/>
+						<textElement textAlignment="Center" verticalAlignment="Top">
+							<font size="5"/>
+						</textElement>
+						<text><![CDATA[VERSION: 1.0.0]]></text>
+					</staticText>
+				</frame>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="160" y="75" width="35" height="15" uuid="7210edf4-c6e8-4d34-b241-f37ca23595ed"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Date]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="195" y="75" width="2" height="15" uuid="7e7cae47-a4ca-46e3-a067-668900b3023f"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField pattern="dd-MMM-yyyy" isBlankWhenNull="true">
+					<reportElement x="197" y="75" width="63" height="15" uuid="9515b810-9f86-494d-bd64-665f12148404"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.5" lineColor="#737373"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{interviewDate}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="8" y="90" width="55" height="13" uuid="933010b0-8b38-4972-8600-9ea6896d7e57"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Candidate Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="63" y="90" width="2" height="13" uuid="36d05ce0-3eb5-46c3-bfff-a447f8358538"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="65" y="90" width="195" height="13" uuid="d06f000b-28f8-4b71-ab25-563ae771dd12"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.5" lineColor="#737373"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{candidateName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="8" y="103" width="55" height="13" uuid="59665f06-8a77-4e11-bf95-5ee5cbd6fe5a"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Father Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="63" y="103" width="2" height="13" uuid="0979ba13-b5ac-4f24-8db3-a7e2ac9bfbc7"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="65" y="103" width="195" height="13" uuid="52aaa919-d74d-4b54-ae80-7311bfade4d7"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.5" lineColor="#737373"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{fatherName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="8" y="116" width="55" height="13" uuid="33c90f68-fa71-4c1e-b758-22b4a3a46754"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Spouse Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="63" y="116" width="2" height="13" uuid="49934b91-453f-478a-8c3f-aa8f89da555b"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="65" y="116" width="195" height="13" uuid="8993ce02-66ae-4d54-96a6-f58a2077e3a0"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.5" lineColor="#737373"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{spouseName}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="8" y="129" width="55" height="13" uuid="38f87250-4519-488b-83ae-079d11bf5492"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Position Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="63" y="129" width="2" height="13" uuid="fa4e58f1-fa05-47da-96e6-6913064b6e26"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="65" y="129" width="195" height="13" uuid="151117b3-a619-44b2-a6b9-265e5906aa6e"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.5" lineColor="#737373"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{applyForPosition}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="8" y="155" width="55" height="13" uuid="20c2795f-471e-4c92-aed5-ceeff52a0e7e"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Necessary Papers]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="63" y="155" width="2" height="13" uuid="0441df6a-fdf6-444f-ad4d-c0432353a08b"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="65" y="155" width="195" height="13" uuid="ac64f93b-f2bf-40b4-a1e3-d6ce3e5b87e7"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.5" lineColor="#737373"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[NID/Birth Certificate/Chairman’s Certificate]]></text>
+				</staticText>
+				<image hAlign="Center" vAlign="Middle" isUsingCache="false" isLazy="true" onErrorType="Blank" evaluationTime="Band">
+					<reportElement x="68" y="155" width="12" height="10" uuid="5af4f54d-e3ed-4d72-a34b-bce6f0ce58ec"/>
+					<imageExpression><![CDATA[$F{isNIDSubmit} ? "check-mark-u2713.png" : ""]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle" isUsingCache="false" isLazy="true" onErrorType="Blank" evaluationTime="Band">
+					<reportElement x="88" y="155" width="12" height="10" uuid="aa4dbd1c-ccf3-4c83-a569-36aa0eaab379"/>
+					<imageExpression><![CDATA[$F{isBirthDateCertSubmit} ? "check-mark-u2713.png" : ""]]></imageExpression>
+				</image>
+				<image hAlign="Center" vAlign="Middle" isUsingCache="false" isLazy="true" onErrorType="Blank" evaluationTime="Band">
+					<reportElement x="137" y="155" width="12" height="10" uuid="b4d0eba0-6ddf-4595-85c4-4225965960cd"/>
+					<imageExpression><![CDATA[$F{isChairmanCertSubmit} ? "check-mark-u2713.png" : ""]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="8" y="169" width="55" height="13" uuid="3c4b1235-c6c3-4a08-890e-5df1d5fdfe3e"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Behaviour]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="63" y="169" width="2" height="13" uuid="36eed535-54a1-4701-9142-c700ceac77bc"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement x="65" y="169" width="195" height="13" uuid="ec8f2fc0-beaa-42e4-99f3-5bd7895903a3"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.5" lineColor="#737373"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{behave}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="8" y="182" width="55" height="13" uuid="eb7adf27-82a4-413d-9fb0-aa1497d6538a"/>
+					<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Remarks]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="63" y="182" width="2" height="13" uuid="8929a886-c572-4776-9e7d-05ac98888513"/>
+					<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="65" y="182" width="195" height="13" uuid="8a19159b-aa25-4dd5-8fd2-876a2762467a"/>
+					<box topPadding="1" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.5" lineColor="#737373"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{other}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="165" y="215" width="75" height="15" uuid="840e2e0c-48d7-416c-85b9-53e601d68116"/>
+					<box topPadding="2" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Solid"/>
+						<topPen lineWidth="0.5" lineColor="#737373"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.0"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="6"/>
+					</textElement>
+					<text><![CDATA[HR Department]]></text>
+				</staticText>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="8" y="142" width="55" height="13" uuid="ec7ee51f-15e4-44f8-99ab-ad327860a0b6"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Date Of Birth]]></text>
+				</staticText>
+				<textField pattern="dd-MMM-yyyy" isBlankWhenNull="true">
+					<reportElement x="65" y="142" width="195" height="13" uuid="c7094f2a-4a82-40d1-a233-3eea627ca66c"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2">
+						<pen lineWidth="0.5" lineStyle="Dotted"/>
+						<topPen lineWidth="0.0"/>
+						<leftPen lineWidth="0.0"/>
+						<bottomPen lineWidth="0.5" lineColor="#737373"/>
+						<rightPen lineWidth="0.0"/>
+					</box>
+					<textElement verticalAlignment="Bottom">
+						<font size="6"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dateOfBirth}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement stretchType="ContainerHeight" x="63" y="142" width="2" height="13" uuid="3e5275aa-64c1-4a1f-99d8-9a7f4cbf937e"/>
+					<box topPadding="0" leftPadding="2" bottomPadding="1" rightPadding="2"/>
+					<textElement textAlignment="Right" verticalAlignment="Bottom">
+						<font size="6" isBold="false"/>
+					</textElement>
+					<text><![CDATA[:]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
